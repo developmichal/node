@@ -18,7 +18,7 @@ axios
   .then(res => console.log(res.data))
   .catch(err => console.error(err));
 
-  app.get('/apps', (req, res) => {
+  app.get('/', (req, res) => {
     axios
       .request(options)
       .then(response => {
